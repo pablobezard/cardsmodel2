@@ -1,0 +1,167 @@
+/*cards*/ 
+
+.titulo{
+    
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.titulo_card{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+   
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    
+}
+
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    margin: 50px;
+}
+
+.container .card:hover{
+    height:420px;
+}
+
+
+
+.container  .card  .imbx{
+position: relative;
+width: 260px;
+height: 260px;
+top: -60px;
+left: 20px;
+z-index: 1;
+box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card  .imbx img {
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding:  10px 45px;
+    text-align:  center;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+ 
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+   margin-top: 40px;
+   transition-delay: 0.3s;
+   
+}
+
+    /*service*/
+    .service {
+        display: grid;
+        grid-template-rows: repeat(2 , auto);
+       
+        padding: 4rem;
+    
+    }
+    
+    @media (min-width: 768px) {
+        .service {
+            
+            grid-template-columns: repeat(2, 1fr); 
+            column-gap: 2rem;
+            
+         }
+    
+    } 
+    
+
+    
+    .cont_img_ser, .service__img{
+        grid-row: 1 / 2;
+        grid-template-columns: 1 / 2;
+        height: 400px;
+        margin-left: 30px;
+        
+     }   
+    
+    
+    
+    @media (min-width: 768px) {
+     
+        .cont_img_ser, .service__img {
+            grid-column: 1 / 2;
+           
+            height: 600px;
+            
+    
+        }
+    
+    }
+    
+    
+    .contenedor_ser {
+        background:rgb(79, 39, 1);
+       }
+    
+       .service__contenido {
+        margin-top: 150px;
+       }   
+        
+     @media (max-width: 768px){
+    .service__contenido {
+     margin-top: 10px;
+     margin-bottom: 0 ;
+      }
+    }
+    
+    
+    .contenedor_ser h2{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #fff;
+       margin-top:50px ;
+    
+       }
+
+       .p_service{
+        color: rgb(156, 156, 156);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top:50px ;
+    }
+    
+    
+       .contenedor_ser h2,
+       .contenedor h2{
+           font-size: 40px;
+       }
+
+
+
